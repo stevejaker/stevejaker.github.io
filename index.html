@@ -1,22 +1,72 @@
-<body>
-<h1 id="Header">Webpage Testing</h1>
-<style>
-.center_box {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-.center {
-	text-align: center;
-}
-</style>
-<div class="center_box" >
-	<p class="center" id="demo">Hi.</p>
-</div>
-
-<script>
-	document.getElementById("demo").innerHTML = "New Text";
-</script>
-
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Steven Jacobsen</title>
+  </head>
+  <body>
+    <div class="topnav" style="position:sticky;">
+      <a class="active" href="index.html">Home</a>
+      <a href="programming.html">Programming Experience</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+    </div> <!-- topnav end -->
+    <div class="page-text">
+      <div class="introduction section-title">
+        <h2>Steven Jacobsen</h2>
+        <h4>Aspiring Software Engineer</h4>
+        <p>I love using computer programming to build creative solutions for complex problems</p>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="home-image">
+              <!-- <img src="img/sample.jpg" alt="main-pic"> -->
+              <img src="img/profile.jpg" alt="main-pic">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="textbox">
+              <div class="text">
+                <h2 class="main-page-header">Goal</h2>
+                <p>My mission is to provide quality solutions that solve the problems
+                  accociated with the complexity of modern life. I seek to accomplish this
+                  through hard work, dependability, and a positive attitude.
+                </p>
+                <h4 class="main-page-header">Programming Experience</h4>
+                <p>
+                  I have a passion for Python and am always looking to improve my skills through continuous learning.
+                  I began learning Python in December 2017 and have since taught myself multiple programming concepts and
+                  languages. I recently begun learning web development and have greatly enjoyed it. For more information,
+                  see <a href="programming.html">here (not finished)</a>.
+                </p>
+                <h4 class="main-page-header">Personal Life</h4>
+                <p>
+                  I am a fun-loving husband and father of the craziest twin boys. I love to spend time with
+                  my family, play the guitar, and see the outdoors as much as possible. For more information,
+                  see <a href="about.html">here (not finished)</a>.
+                </p>
+                <h4 class="main-page-header">Education</h4>
+                <p>I graduated from BYU December 2019 with a Bachelor's Degree in Chemistry.</p>
+                <!-- <h4>Heading #4</h4>
+                <p>
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-block">
+        <span class="copyright"><small>&copy; Copyright 2020, Steven Jacobsen. All Rights Reserved.</small></span>
+      </div>
+    </footer>
+  </body>
+</html>
