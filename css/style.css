@@ -141,6 +141,10 @@ footer .copyright {
 .textbox .text .main-page-header {
   text-align: left;
 }
+.textbox .text p {
+    margin: 0;
+    padding: 0;
+}
 @media screen and (max-width: 768px) {
   .main-page-header {
     text-align: center !important;
@@ -181,9 +185,6 @@ footer .copyright {
 }
 .table .table-footer {
 
-}
-.table a {
-  color: #4CAF50;
 }
 .table h2 {
   margin-top: 0;
@@ -329,6 +330,10 @@ footer .copyright {
   color: black;
   border: 2px solid black;
 }
+.company-name {
+  margin-top: 0;
+  text-align: center;
+}
 .work-experience h2 {
   margin-top: 0;
   text-align: center;
@@ -336,9 +341,13 @@ footer .copyright {
 }
 .work-experience h3 {
   margin-top: 0;
-  text-align: left;
+  text-align: center;
 }
 .job-information h5 {
+  font-style: italic;
+  text-align: center;
+}
+.job-information p {
   font-style: italic;
   text-align: center;
 }
