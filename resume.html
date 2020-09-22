@@ -1,15 +1,35 @@
 <!DOCTYPE html>
+<!--
+This page is intended to be a complete collection of everything I did and
+learned at each company I have worked for. You will find more information on
+this page than what can be included on a single page resume. For this reason,
+you may find expanded job descriptions and/or additional information on this page.
+-->
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/sidenav.js"></script>
     <title>Steven Jacobsen</title>
   </head>
   <body>
+    <div class="sidenav">
+      <a href="#current-experience" id="current-experience-link" class="active" onclick="updateResumeClass(this);">Current Experience</a>
+      <a href="#byu-dept-of-chemistry" id="byu-dept-of-chemistry-link" class="inactive" onclick="updateResumeClass(this);">BYU Dept. of Chem</a>
+      <a href="#edge-tutoring" id="edge-tutoring-link" class="inactive" onclick="updateResumeClass(this);">Edge Tutoring</a>
+      <a href="#ihc-r1" id="ihc-r1-link" class="inactive" onclick="updateResumeClass(this);">IHC/R1</a>
+      <a href="#volunteer-developer-programmer" id="volunteer-developer-programmer-link" class="inactive" onclick="updateResumeClass(this);">Volunteer Dev</a>
+      <a href="#volunteer-chemistry-tutor" id="volunteer-chemistry-tutor-link" class="inactive" onclick="updateResumeClass(this);">Volunteer Tutor</a>
+      <a href="#missionary" id="missionary-link" class="inactive" onclick="updateResumeClass(this);">Mission</a>
+    </div>
     <div class="topnav" style="position:sticky;">
       <a href="index.html">Home</a>
       <a href="programming.html">Programming Experience</a>
@@ -17,266 +37,374 @@
       <a href="about.html">About Me</a>
       <a href="contact.html">Contact</a>
     </div> <!-- topnav end -->
-    <div class="page-text">
-      <div class="work-experience">
-        <div class="section-title">
-          <span class="textbox">
-            <h1>Work Experience</h1>
-            <span class="reference-statement">Refernces are available upon request</span>
-          </span>
+    <div class="page-text container-fluid">
+      <div class="sidenav-page">
+        <div class="temp">
+          <h2>This Page is Under Construction</h2>
         </div>
-        <div class="company" id="byu-dept-of-chemistry">
-          <div class="company-head">
-            <div class="company-name">
-              <h3>BYU Department of Chemistry and Biochemistry</h3>
+        <div class="work-experience">
+          <div class="section-title">
+            <span class="textbox">
+              <h1>Work Experience</h1>
+              <span class="reference-statement">Refernces are available upon request</span>
+            </span>
+          </div>
+          <div class="filler" id="current-experience"></div>
+          <div class="company">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>Current Experience</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="job-title">Training and Personal Growth</span>
+                  <br>
+                  <span class="dates-worked">January 2020 - Current</span>
+                </p>
+              </div>
             </div>
-            <div class="job-information">
-              <p>
-                <span class="job-title">Research Assistant -- Computational Chemistry</span>
-                <br>
-                <span class="dates-worked">January 2019 - January 2020</span>
-              </p>
+            <div class="company-body">
+              <div class="what-i-did">
+                <h4>What I am Doing</h4>
+                <p>
+                  January 2020 through current has been and extremely productive time for me.
+                  I have spent this time improving my programming knowledge and skills. I have done
+                  this  by creating projects to showcase my abilities while searching for employment
+                  opportunities. In this time, I have been able to learn several new languages/frameworks
+                  and greatly improve my programming abilities.
+                </p>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I am Learning</h4>
+                <!-- <br><small style="color:black;font-style: italic;">(Note: Learning is ongoing)</small> -->
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="current-learning">
+                      <ol style="list-style-type: inherit;">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="current-learning">
+                      <ol style="list-style-type: inherit;">
+                        <li>Node.js</li>
+                        <li>Perl</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="current-learning">
+                      <ol style="list-style-type: inherit;">
+                        <li>BeautifulSoup</li>
+                        <li>Pytesseract</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <!-- <ol style="list-style-type: inherit;">
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>BeautifulSoup</li>
+                  <li>Pytesseract</li>
+                  <li>Node.js</li>
+                  <li>Perl</li>
+                </ol> -->
+                <!-- <p></p> -->
+              </div>
             </div>
           </div>
-          <div class="company-body">
-            <div class="what-i-did">
-              <h4>Job Responsibilities</h4>
-              <ol style="list-style-type: inherit;">
-                <li>Lead programmer on computational team for peptide catalyst synthesis project (primarily using Python and Bash)</li>
-                <li>Wrote and maintained a codebase of 10,000+ lines of code</li>
-                <li>Automated critical processes related to preparing, running, and analyzing molecular dynamics simulations</li>
-                <li>Work closely with team members to optimize code and share knowledge</li>
-                <li>Discover creative solutions to new and complicated problems to improve the quality of collected data and results</li>
-                <li>Learn new technologies frequently to contribute to multiple facets of computational chemistry project</li>
-                <li>Work using BYU’s HPC supercomputer clusters</li>
-              </ol>
+          <div class="filler" id="byu-dept-of-chemistry"></div>
+          <div class="company">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>BYU Department of Chemistry and Biochemistry</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="job-title">Research Assistant -- Computational Chemistry</span>
+                  <br>
+                  <span class="dates-worked">January 2019 - January 2020</span>
+                </p>
+              </div>
             </div>
-            <hr style="height:1px; border-width:0; background-color:black; color:black;">
-            <div class="what-i-learned">
-              <h4>What I Learned</h4>
-              <p>
-                Unfinished...
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="company" id="edge-tutoring">
-          <div class="company-head">
-            <div class="company-name">
-              <h3>Edge Tutoring</h3>
-            </div>
-            <div class="job-information">
-              <p>
-                <span class="job-title">Private Tutor</span>
-                <br>
-                <span class="dates-worked">September 2018 – January 2019</span>
-              </p>
-            </div>
-          </div>
-          <div class="company-body">
-            <div class="what-i-did">
-              <h4>Job Responsibilities</h4>
-              <ol style="list-style-type: inherit;">
-                <li>Tutor high school and middle school students in chemistry and calculus</li>
-                <li>Create study plans with students to help them manage their workload</li>
-                <li>Created instructional videos to explain complex concepts.</li>
-              </ol>
-            </div>
-            <hr style="height:1px; border-width:0; background-color:black; color:black;">
-            <div class="what-i-learned">
-              <h4>What I Learned</h4>
-              <p>
-                Unfinished...
-              </p>
+            <div class="company-body">
+              <div class="what-i-did">
+                <h4>Job Responsibilities</h4>
+                <ol style="list-style-type: inherit;">
+                  <li>Lead programmer on computational team for peptide catalyst synthesis project (primarily using Python and Bash)</li>
+                  <li>Wrote, tested, debugged, and maintained a codebase of 10,000+ lines of code</li>
+                  <li>Tested and debugged various programs written by others in Python, FORTRAN, Perl, C++, C, etc.</li>
+                  <li>Automated critical processes related to preparing, running, and analyzing molecular dynamics simulations</li>
+                  <li>Work closely with team members to optimize code and share knowledge</li>
+                  <li>Discover creative solutions to new and complicated problems to improve the quality of collected data and results</li>
+                  <li>Learn new technologies frequently to contribute to multiple facets of computational chemistry project</li>
+                  <li>Worked in office and remotely using BYU’s HPC supercomputer clusters (RHEL 6/7) and Slack for team communication</li>
+                  <li>Participated and occasionally presented scientific research in weekly team meetings</li>
+                  <li>Awarded 2nd Place for presenting my scientific research at the BYU Student Research Conference (formal presentation setting)</li>
+                </ol>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I Learned</h4>
+                <p>
+                  Working in the Michaelis Lab was one of the most beneficial professional
+                  experiences of my life. Coming into the lab, I knew python and had basic
+                  experience with the Unix terminal. Upon leaving the lab, I had greatly
+                  increased my python abilities while learning Bash/Shell Scripting, basic C++,
+                  becoming extremely comfortable working in a Linux environment, learning
+                  supercomputing (via ssh login), and getting exposure to FORTRAN, Perl, C,
+                  CSH scripting, and various other languages. I learned how to automate
+                  repetative and essential tasks and the importance of using the most
+                  appropriate programming language available for the task at hand. I also
+                  increased in my ability to conduct and present scientific research to various
+                  audiences in various settings.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="company" id="ihc-r1">
-          <div class="company-head">
-            <div class="company-name">
-              <h3>Intermountain Healthcare/R1</h3>
+          <div class="filler" id="edge-tutoring"></div>
+          <div class="company">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>Edge Tutoring</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="job-title">Private Tutor</span>
+                  <br>
+                  <span class="dates-worked">September 2018 – January 2019</span>
+                </p>
+              </div>
             </div>
-            <div class="job-information">
-              <p>
-                <span class="job-title">Patient Account Representative</span>
-                <br>
-                <span class="dates-worked">September 2014 - September 2018</span>
-              </p>
-            </div>
-          </div>
-          <div class="company-body">
-            <div class="what-i-did">
-              <h4>Job Responsibilities</h4>
-              <ol style="list-style-type: inherit;">
-                Family Medicine Insurance Billing Team, Apr. 2016-Sep. 2018
-                Self-Pay Team, Sep. 2014-Apr. 2016
-                <li>Helped teach co-workers the best practices and efficient use of new software</li>
-                <li>Frequently helped co-workers with technical support</li>
-                <li>Worked closely with various health insurance companies to ensure the timely and accurate processing and payment of claims</li>
-                <li>Coordinated with medical providers and professional medical coding specialists to ensure that claims were coded legally and accurately </li>
-                <li>Regularly recognized by management for outstanding customer service</li>
-                <li>Received and processed confidential financial assistance paperwork and offered discounts based on documentation to those in need</li>
-                <li>Handled difficult and sensitive phone calls in which I contacted patients whose accounts were set to go to collections to offer payment arrangements, financial assistance, and awareness</li>
-                <li>Regularly fielded up to 40 phone calls per day from patients, resolving a wide range of questions and concerns</li>
-              </ol>
-            </div>
-            <hr style="height:1px; border-width:0; background-color:black; color:black;">
-            <div class="what-i-learned">
-              <h4>What I Learned</h4>
-              <p>
-                Unfinished...
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="company" id="COMPANY-NAME">
-          <div class="company-head">
-            <div class="company-name">
-              <h3>COMPANY NAME</h3>
-            </div>
-            <div class="job-information">
-              <p>
-                <span class="job-title">Arbitrary Job Title</span>
-                <br>
-                <span class="dates-worked">Month Day, Year - Month Day, Year</span>
-              </p>
+            <div class="company-body">
+              <div class="what-i-did">
+                <h4>Job Responsibilities</h4>
+                <ol style="list-style-type: inherit;">
+                  <li>Tutored high school and middle school students in chemistry and calculus</li>
+                  <li>Created study plans with students to help them manage their workload</li>
+                  <li>Taught using instructional videos, written documents, and in-person sessions</li>
+                </ol>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I Learned</h4>
+                <p>
+                  I had been tutoring people as a volunteer for several years before
+                  this position, however, I learned a lot in this job. Most of the people
+                  I had tutored in the past were college age and in this position, I
+                  was responsible for tutoring mostly high school and occasionally
+                  elementary school aged kids. This helped me to learn to explain
+                  difficult concepts such as calculus, chemistry, and other scientific/technical
+                  concepts at varying levels of understanding. Turotring sessions also
+                  occured in person, via written documents, and through pre-recorded
+                  instructional videos. Overall, this job greatly enhanced my written and
+                  verbal communication skills and taught me the importance of focusing
+                  on simple, effective communication.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="company-body">
-            <div class="what-i-did">
-              <h4>Job Responsibilities</h4>
-              <ol style="list-style-type: inherit;">
-                <li>Job Responsibility #1</li>
-                <li>Job Responsibility #2</li>
-                <li>Job Responsibility #3</li>
-                <li>Job Responsibility #4</li>
-              </ol>
+          <div class="filler" id="ihc-r1"></div>
+          <div class="company">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>Intermountain Healthcare/R1</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="job-title">Patient Account Representative</span>
+                  <br>
+                  <span class="dates-worked">September 2014 - September 2018</span>
+                </p>
+              </div>
             </div>
-            <hr style="height:1px; border-width:0; background-color:black; color:black;">
-            <div class="what-i-learned">
-              <h4>What I Learned</h4>
-              <p>
-                This is some paragraph that explains exactly what I learned while working at this specific company.
-              </p>
-            </div>
-          </div>
-        </div> -->
-      </div>
-      <div class="volunteer-experience">
-        <div class="section-title">
-          <span class="textbox">
-            <h1>Volunteer Experience</h1>
-          </span>
-        </div>
-        <div class="company" id="volunteer-developer-programmer">
-          <div class="company-head">
-            <div class="company-name">
-              <h3>Volunteer Developer/Programmer</h3>
-            </div>
-            <div class="job-information">
-              <p>
-                <span class="dates-worked">December 2017 - Current</span>
-              </p>
-            </div>
-          </div>
-          <div class="company-body">
-            <div class="what-i-did">
-              <!-- <h4>Volunteer Responsibilities</h4> -->
-              <!-- <ol style="list-style-type: inherit;">
-                <li></li>
-              </ol> -->
-              <h4>Details</h4>
-              <p>
-                As soon as I began learning how to program, I offered my services
-                to friends and family, providing them free engineering and automation
-                solutions. Projects include command-line file sharing tools and simple
-                APIs/Web Services among others.
-              </p>
-              <p>
-                Since leaving BYU, I have provided occasional volunteer assistance with
-                the computational chemistry project. This has entailed aid with debugging
-                and helping solve other issues.
-              </p>
-            </div>
-            <hr style="height:1px; border-width:0; background-color:black; color:black;">
-            <div class="what-i-learned">
-              <h4>What I Learned</h4>
-              <p>
-                While programming is enjoyable as it is, I have further enjoyed providing
-                engineering solutions to friends and family. One of my favorite experiences
-                is seeing my work positively impact the lives of others. I hope that future
-                professional and personal projects will continue to benefit the lives of others.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="company" id="volunteer-chemistry-tutor">
-          <div class="company-head">
-            <div class="company-name">
-              <h3>Volunteer Chemistry Tutor</h3>
-            </div>
-            <div class="job-information">
-              <p>
-                <span class="dates-worked">2014 - 2017</span>
-              </p>
-            </div>
-          </div>
-          <div class="company-body">
-            <div class="what-i-did">
-              <!-- <h4>Volunteer Responsibilities</h4> -->
-              <!-- <ol style="list-style-type: inherit;">
-                <li></li>
-              </ol> -->
-              <h4>Details</h4>
-              <p>
-                Since 2014, I have provided free Chemistry tutoring for both high
-                school and college students. Several of the college students I tutored
-                were able to improve their grades to the point that helped them be
-                accepted into medical or dental school.
-              </p>
-              <p>
+            <div class="company-body">
+              <div class="what-i-did">
+                <h4>Job Responsibilities</h4>
+                <ol style="list-style-type: inherit;">
+                  <li>Helped teach co-workers the best practices and efficient use of new software</li>
+                  <li>Frequently helped co-workers with technical support</li>
+                  <li>Coordinated with various health care personnel and health insurance companies</li>
+                  <li>Regularly recognized by management for outstanding customer service</li>
+                  <li>Handled confidential and time-sensitive patient information</li>
+                  <li>Resolved difficult and sensitive phone calls while offering necessary support and education</li>
+                  <li>Regularly fielded up to 40 phone calls per day from patients, resolving a wide range of questions and concerns</li>
+                </ol>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I Learned</h4>
+                <p>
+                  Working for Intermountain Healthcare/R1 taught me how to be patient, helpful,
+                  and caring in stressful and difficult situations. Additionally, I learned the importance
+                  of being resiliant and quickly adapting to changes in the workplace. In this position,
+                  there were weekly, if not daily, changes to our job due to the complexity of medical billing.
+                  This required me to be in a state of constant learning and vigilance to ensure
+                  my work was done correctly and legally. This was a difficult position as I had to
+                  deal with a lot of change. This includes: moving office locations, changing teams
+                  (requiring me to completely re-learn my entire job), changing systems for work and
+                  having to re-learn how to do our jobs in the new system, being acquired by a new company
+                  (having to again re-learn key aspects of my job based on the new company's processes).
 
-              </p>
-            </div>
-            <hr style="height:1px; border-width:0; background-color:black; color:black;">
-            <div class="what-i-learned">
-              <h4>What I Learned</h4>
-              <p>
-                Unfinished...
-              </p>
+                </p>
+              </div>
             </div>
           </div>
+          <!-- <div class="company" id="COMPANY-NAME">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>COMPANY NAME</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="job-title">Arbitrary Job Title</span>
+                  <br>
+                  <span class="dates-worked">Month Day, Year - Month Day, Year</span>
+                </p>
+              </div>
+            </div>
+            <div class="company-body">
+              <div class="what-i-did">
+                <h4>Job Responsibilities</h4>
+                <ol style="list-style-type: inherit;">
+                  <li>Job Responsibility #1</li>
+                  <li>Job Responsibility #2</li>
+                  <li>Job Responsibility #3</li>
+                  <li>Job Responsibility #4</li>
+                </ol>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I Learned</h4>
+                <p>
+                  This is some paragraph that explains exactly what I learned while working at this specific company.
+                </p>
+              </div>
+            </div>
+          </div> -->
         </div>
-        <div class="company" id="missionary">
-          <div class="company-head">
-            <div class="company-name">
-              <h3>Mission for The Church of Jesus Christ of Latter-day Saints</h3>
+        <div class="volunteer-experience">
+          <div class="section-title">
+            <span class="textbox">
+              <h1>Volunteer Experience</h1>
+            </span>
+          </div>
+          <div class="filler" id="volunteer-developer-programmer"></div>
+          <div class="company">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>Volunteer Developer/Programmer</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="dates-worked">December 2017 - Current</span>
+                </p>
+              </div>
             </div>
-            <div class="job-information">
-              <p>
-                <span class="job-title">Arizona Tempe Mission (Spanish Speaking)</span>
-                <br>
-                <span class="dates-worked">July 2012 - July 2014</span>
-              </p>
+            <div class="company-body">
+              <div class="what-i-did">
+                <!-- <h4>Volunteer Responsibilities</h4> -->
+                <!-- <ol style="list-style-type: inherit;">
+                  <li></li>
+                </ol> -->
+                <h4>Details</h4>
+                <p>
+                  As soon as I began learning how to program, I offered my services
+                  to friends and family, providing them free engineering and automation
+                  solutions. Projects include command-line file sharing tools and simple
+                  APIs/Web Services among others.
+                </p>
+                <p>
+                  Since leaving BYU, I have provided occasional volunteer assistance with
+                  the computational chemistry project. This has entailed aid with debugging
+                  and helping solve other issues.
+                </p>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I Learned</h4>
+                <p>
+                  While programming is enjoyable as it is, I have further enjoyed providing
+                  engineering solutions to friends and family. One of my favorite experiences
+                  is seeing my work positively impact the lives of others. I hope that future
+                  professional and personal projects will continue to benefit the lives of others.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="company-body">
-            <div class="what-i-did">
-              <!-- <h4>Volunteer Responsibilities</h4> -->
-              <!-- <ol style="list-style-type: inherit;">
-                <li></li>
-              </ol> -->
-              <h4>Details</h4>
-              <p>
-                Unfinished...
-              </p>
+          <div class="filler" id="volunteer-chemistry-tutor"></div>
+          <div class="company">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>Volunteer Chemistry Tutor</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="dates-worked">2014 - 2017</span>
+                </p>
+              </div>
             </div>
-            <hr style="height:1px; border-width:0; background-color:black; color:black;">
-            <div class="what-i-learned">
-              <h4>What I Learned</h4>
-              <p>
-                Unfinished...
-              </p>
+            <div class="company-body">
+              <div class="what-i-did">
+                <!-- <h4>Volunteer Responsibilities</h4> -->
+                <!-- <ol style="list-style-type: inherit;">
+                  <li></li>
+                </ol> -->
+                <h4>Details</h4>
+                <p>
+                  Since 2014, I have provided free Chemistry tutoring for both high
+                  school and college students. Several of the college students I tutored
+                  were able to improve their grades to the point that helped them be
+                  accepted into medical or dental school.
+                </p>
+                <p>
+
+                </p>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I Learned</h4>
+                <p>
+                  Unfinished...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="filler" id="missionary"></div>
+          <div class="company">
+            <div class="company-head">
+              <div class="company-name">
+                <h3>Mission for The Church of Jesus Christ of Latter-day Saints</h3>
+              </div>
+              <div class="job-information">
+                <p>
+                  <span class="job-title">Arizona Tempe Mission (Spanish Speaking)</span>
+                  <br>
+                  <span class="dates-worked">July 2012 - July 2014</span>
+                </p>
+              </div>
+            </div>
+            <div class="company-body">
+              <div class="what-i-did">
+                <!-- <h4>Volunteer Responsibilities</h4> -->
+                <!-- <ol style="list-style-type: inherit;">
+                  <li></li>
+                </ol> -->
+                <h4>Details</h4>
+                <p>
+                  Unfinished...
+                </p>
+              </div>
+              <hr style="height:1px; border-width:0; background-color:black; color:black;">
+              <div class="what-i-learned">
+                <h4>What I Learned</h4>
+                <p>
+                  Unfinished...
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -3,65 +3,220 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/sidenav.js"></script>
     <title>Steven Jacobsen</title>
   </head>
   <body>
     <div class="sidenav">
-      <a href="about.html" id="about-home" class="active">Top</a>
-      <a href="#pre-college-life" id="pre-college-life" class="inactive" onclick="updateClass(this);">Pre-College Life</a>
-      <a href="#university-of-utah" id="university-of-utah" class="inactive" onclick="updateClass(this);">U of U</a>
-      <a href="#arizona-tempe-mission" id="arizona-tempe-mission" class="inactive" onclick="updateClass(this);">Mission</a>
-      <a href="#byu" id="byu" class="inactive" onclick="updateClass(this);">BYU</a>
-      <a href="#programming" id="programming" class="inactive" onclick="updateClass(this);">Full Programming Background</a>
-      <a href="#personal-life" id="personal-life" class="inactive" onclick="updateClass(this);">Personal Life</a>
+      <!-- <a href="about.html" id="about-home-link" class="active">Top</a> -->
+      <a href="#who-am-i" id="who-am-i-link" class="active" onclick="updateAboutClass(this);">Who am I?</a>
+      <a href="#arizona-tempe-mission" id="arizona-tempe-mission-link" class="inactive" onclick="updateAboutClass(this);">Mission</a>
+      <a href="#byu" id="byu-link" class="inactive" onclick="updateAboutClass(this);">BYU</a>
+      <a href="#programming" id="programming-link" class="inactive" onclick="updateAboutClass(this);">Programming Background</a>
+      <a href="#personal-life" id="personal-life-link" class="inactive" onclick="updateAboutClass(this);">Personal Life</a>
     </div>
     <div class="topnav" style="position:sticky;">
       <a href="index.html">Home</a>
       <a href="programming.html">Programming Experience</a>
       <a href="resume.html">Resume</a>
-      <a class="active" href="about.html">About Me</a> <!--style="float:right;"-->
-      <a href="contact.html">Contact</a> <!--style="float:right;"-->
+      <a class="active" href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
     </div>
     <div class="page-text container-fluid">
-      <div class="about">
+      <div class="sidenav-page">
         <div class="temp">
           <h2>This Page is Under Construction</h2>
         </div>
-        <div class="pre-college-life">
-
+        <div class="filler" id="who-am-i"></div>
+        <div class="who-am-i">
+          <div class="section-title">
+            <span class="textbox">
+              <h1>Who am I?</h1>
+            </span>
+          </div>
+          <div class="row subsection-block">
+            <div id="Introduction" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="subsection-textbox">
+                <div class="subsection-title">
+                  <h4>Introduction</h4>
+                </div>
+                <div class="subsection-textbox-content">
+                  <p>Filler Textbox</p>
+                </div>
+              </div>
+  					</div>
+            <div id="placeholder-img" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <img src="img/placeholder.png" alt="placeholder">
+            </div>
+          </div>
         </div>
-        <!-- <br> -->
-        <div class="university-of-utah">
-
-        </div>
-        <!-- <br> -->
+        <br>
+        <div class="filler" id="arizona-tempe-mission"></div>
         <div class="arizona-tempe-mission">
-
+          <div class="section-title">
+            <span class="textbox">
+              <h1>Arizona Tempe Mission</h1>
+            </span>
+          </div>
+          <div class="row subsection-block">
+            <div id="spanish" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  						<!-- Spanish -->
+              <div class="subsection-textbox">
+                <div class="subsection-title">
+                  <h4>Spanish</h4>
+                </div>
+                <div class="subsection-textbox-content">
+                  <p>Filler Textbox</p>
+                </div>
+              </div>
+  					</div>
+            <div id="placeholder-img" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <img src="img/placeholder.png" alt="placeholder">
+            </div>
+          </div>
         </div>
-        <!-- <br> -->
+        <br>
+        <div class="filler" id="byu"></div>
         <div class="byu">
-
+          <div class="section-title">
+            <span class="textbox">
+              <h1>Brigham Young University</h1>
+            </span>
+          </div>
+          <div class="row subsection-block">
+            <div id="chemistry" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="subsection-textbox">
+                <div class="subsection-title">
+                  <h4>Chemistry</h4>
+                </div>
+                <div class="subsection-textbox-content">
+                  <!-- Why OChem was so important to me -->
+                  <!-- Analytical Chemistry and Matlab -->
+                  <p>Filler Textbox</p>
+                </div>
+              </div>
+            </div>
+            <div id="placeholder-img" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <img src="img/placeholder.png" alt="placeholder">
+            </div>
+          </div>
+          <div class="row subsection-block">
+            <div id="placeholder-img" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <img src="img/placeholder.png" alt="placeholder">
+            </div>
+            <div id="michaelis-lab" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="subsection-textbox">
+                <div class="subsection-title">
+                  <h4>The Michaelis Research Group</h4>
+                </div>
+                <div class="subsection-textbox-content">
+                  <!-- How this sparked my interest in organic chemistry -->
+                  <!-- How Dr. Michaelis changed my life -->
+                  <!-- Computational Chemistry -->
+                  <!-- Constant Learning and Growth -->
+                  <!-- Multi-tasking and hard work -->
+                  <!-- Growing a project/program from the ground up -->
+                  <p>Filler Textbox</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <br> -->
-        <div class="programming ">
-
+        <br>
+        <div class="filler" id="programming"></div>
+        <div class="programming">
+          <div class="section-title">
+            <span class="textbox">
+              <h1>Programming</h1>
+            </span>
+          </div>
+          <div class="row subsection-block">
+            <div id="background" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  						<!-- Background -->
+              <div class="subsection-textbox">
+                <div class="subsection-title">
+                  <h4>Background</h4>
+                </div>
+                <div class="subsection-textbox-content">
+                  <p>Filler Textbox</p>
+                </div>
+              </div>
+  					</div>
+            <div id="placeholder-img" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <img src="img/placeholder.png" alt="placeholder">
+            </div>
+          </div>
         </div>
-        <!-- <br> -->
+        <br>
+        <div class="filler" id="personal-life"></div>
         <div class="personal-life">
-
+          <div class="section-title">
+            <span class="textbox">
+              <h1>Personal Life</h1>
+            </span>
+          </div>
         </div>
-        <div class="row">
+        <div class="row subsection-block">
+          <div id="family" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<!-- Family -->
+            <div class="subsection-textbox">
+              <div class="subsection-title">
+                <h4>Family</h4>
+              </div>
+              <div class="subsection-textbox-content">
+                <p>Filler Textbox</p>
+              </div>
+            </div>
+					</div>
+          <div id="placeholder-img" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <img src="img/placeholder.png" alt="placeholder">
+          </div>
+        </div>
+        <div class="row subsection-block">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
           </div>
         </div>
       </div>
     </div>
+    <!-- <div class="page-text container-fluid">
+      <div class="about">
+        <div class="temp">
+          <h2>This Page is Under Construction</h2>
+        </div>
+        <div class="who-am-i">
+
+        </div>
+        <div class="university-of-utah">
+
+        </div>
+        <div class="arizona-tempe-mission">
+
+        </div>
+        <div class="byu">
+
+        </div>
+        <div class="programming ">
+
+        </div>
+        <div class="personal-life">
+
+        </div>
+        <div class="row subsection-block">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+          </div>
+        </div>
+      </div>
+    </div> -->
     <footer>
       <div class="footer-block about">
         <span class="copyright"><small>&copy; Copyright 2020, Steven Jacobsen. All Rights Reserved.</small></span>

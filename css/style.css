@@ -33,15 +33,15 @@ body a {
   align-items: center;
   display: table;
   padding: 10px;
-  width: 50%;
+  width: 100%;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #34495E;
+  background-color: #707B7C;/*#34495E;*/
   text-align: center;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
-  /* color: #ddd; */
+  color: white;
 }
 .subsection-title h3 {
   margin-top: 0;
@@ -53,6 +53,34 @@ body a {
 }
 .subsection-block {
   padding: 10px 0px 10px 0px;
+}
+.subsection-block img {
+  align-items: center;
+  display: table;
+  padding: 10px;
+  width: 100%;
+  /* height: 50px; */
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #707B7C; */
+  /* text-align: center; */
+  border: 1px solid black;
+  border-radius: 10px;
+  /* color: white; */
+}
+.subsection-textbox-content {
+  margin-top: 10px;
+  /* align-items: center; */
+  /* display: table; */
+  /* padding: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #707B7C;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black; */
 }
 footer {
   text-align: center;
@@ -75,7 +103,7 @@ footer .copyright {
   /* START STYLING RELATED TO FONTS */
 
   /* END STYLING RELATED TO FONTS */
-  /* START STYLING RELATED TO NAVBAR */
+  /* START STYLING RELATED TO NAVBARS */
   /* @media (max-width: 768px) {
     .topnav a .about-contact {
         float: left;
@@ -109,7 +137,55 @@ footer .copyright {
   background-color: #4CAF50;
   color: #333;
 }
-  /* END STYLING RELATED TO NAVBAR */
+
+/* @media screen and (max-height: 450px) { */
+@media screen and (max-width: 768px) {
+  .sidenav {
+      display: none;
+  }
+  .sidenav-page {
+     margin-left: 0 !important;
+  }
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 53px;
+}
+
+.sidenav a {
+  /* padding: 6px 8px 6px 16px; */
+  padding: 6px 0px 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  /* font-size: 25px; */
+  /* color: #818181; */
+  font-size: 17px;
+  color: #f2f2f2;
+  display: block;
+}
+
+.sidenav a:hover {
+  /* color: #f1f1f1; */
+  background-color: #ddd;
+  color: black;
+}
+.sidenav a.active {
+  /* color: black; */
+  color: #f2f2f2;
+  background-color: #34495E;
+
+}
+.sidenav-page {
+   margin-left: 160px; /* Same as the width of the sidenav */
+}
+  /* END STYLING RELATED TO NAVBARS */
 /* END STYLING COMMON TO ALL .html PAGES */
 
 /* START STYLING UNIQUE TO `index.html` */
@@ -292,6 +368,8 @@ footer .copyright {
   background-color: #333;
   color: #ddd;
   padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 /* .contact-box .textbox{
   display:table-cell;
@@ -311,6 +389,45 @@ footer .copyright {
 
 
 /* START STYLING UNIQUE TO `resume.html` */
+/* #who-am-i {
+  padding-top: 53px;
+} */
+#current-experience {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#byu-dept-of-chemistry {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#edge-tutoring {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#ihc-r1 {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#volunteer-developer-programmer {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#volunteer-chemistry-tutor {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#missionary {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+
 .company {
   padding-top: 10px;
 }
@@ -333,6 +450,9 @@ footer .copyright {
 .company-name {
   margin-top: 0;
   text-align: center;
+}
+.work-experience {
+  padding: 0px 0px 0px 0px;
 }
 .work-experience h2 {
   margin-top: 0;
@@ -365,56 +485,33 @@ footer .copyright {
 
 
 /* START STYLING UNIQUE TO `about.html` */
-/* @media screen and (max-height: 450px) { */
-@media screen and (max-width: 768px) {
-  .sidenav {
-      display: none;
-  }
-  .about {
-     margin-left: 0 !important;
-  }
-}
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #333;
-  overflow-x: hidden;
-  padding-top: 53px;
-}
-
-.sidenav a {
-  /* padding: 6px 8px 6px 16px; */
-  padding: 6px 0px 0px 0px;
-  text-align: center;
-  text-decoration: none;
-  /* font-size: 25px; */
-  /* color: #818181; */
-  font-size: 17px;
-  color: #f2f2f2;
-  display: block;
-}
-
-.sidenav a:hover {
-  /* color: #f1f1f1; */
-  background-color: #ddd;
-  color: black;
-}
-.sidenav a.active {
-  /* color: black; */
-  color: #f2f2f2;
-  background-color: #34495E;
-
-}
-
-.about {
-   margin-left: 160px; /* Same as the width of the sidenav */
-}
 .temp h2 {
   text-align:center;
+}
+#who-am-i {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#arizona-tempe-mission {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#byu {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#programming {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
+}
+#personal-life  {
+  margin-top: -53px;
+  padding-bottom: 53px;
+  display: inline-block;
 }
 /* END STYLING UNIQUE TO `about.html` */
 
