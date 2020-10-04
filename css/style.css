@@ -104,11 +104,11 @@ footer .copyright {
 
   /* END STYLING RELATED TO FONTS */
   /* START STYLING RELATED TO NAVBARS */
-  /* @media (max-width: 768px) {
-    .topnav a .about-contact {
-        float: left;
-    }
-  } */
+/* @media (max-width: 768px) {
+  .topnav a .about-contact {
+      float: left;
+  }
+} */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -427,9 +427,13 @@ footer .copyright {
   padding-bottom: 53px;
   display: inline-block;
 }
+/* #work-experience {
+  margin-bottom: -20px;
+  display: inline-block;
+} */
 
 .company {
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 .company-head {
   padding: 10px;
